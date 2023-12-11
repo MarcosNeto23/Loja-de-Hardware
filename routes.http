@@ -1,0 +1,31 @@
+POST http://localhost:3333/headsets
+Content-Type: application/json
+
+{
+    "marca": "Havit 01",
+    "cor": "Azul/Preto",
+    "preco": 199
+}
+
+###
+
+GET http://localhost:3333/headsets?search=Havit
+
+###
+
+GET http://localhost:3333/headsets
+
+###
+
+PUT http://localhost:3333/headsets/c3b7bc09-a618-4200-b408-2d2c9932bb15
+Content-Type: application/json
+
+{
+    "marca": "Redragon 02",
+    "cor": "Vermelho/Preto",
+    "preco": 329
+}
+
+###
+
+DELETE http://localhost:3333/headsets/bb865153-44ec-4800-8486-32c280e531f8
